@@ -1,13 +1,12 @@
-document.getElementById("myForm");
 
-let para =  document.createElement("p");
-let node = document.createTextNode("1. Take Out Trash");
-let element = document.getElementById("list");
 let addButton = document.getElementById("add-button");
-
+let list = document.getElementById("list");
+let input = document.getElementById("input");
 
 addButton.addEventListener("click", () => {
-para.appendChild(node);
-element.appendChild(para);
-alert("Button did a thing!")
+var para =  document.createElement("p");
+//let node = document.createTextNode();
+para.innerText = input.value;
+//para.appendChild(node);
+list.appendChild(para);
 });

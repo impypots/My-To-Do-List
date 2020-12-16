@@ -1,3 +1,20 @@
+html {
+    background: lightgray;
+    text-align: center
+}
+
+h1 {
+    color: green;
+}
+
+header div {
+    border: 2px solid green;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    
+    width: 100%
+}
+
 #add-button {
     background-color: lightgray;
     border-radius: 20%;
@@ -6,4 +23,39 @@
 
 #add-button:hover {
     cursor: pointer;
+}
+
+#list {
+    text-align: center;
+    display: center
+}
+
+.list-item {
+    width: 100%;
+    font-size: 60px;
+    color: green;
+}
+
+.list-item:hover {
+    cursor: pointer;
+}
+
+@keyframes fadeAway1 {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes fadeAway2 {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateX(+20px);
+    }
 }
